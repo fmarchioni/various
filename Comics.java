@@ -28,8 +28,10 @@ private static String PATH="/home/francesco/utils/peanuts/";
 
     public static void main(String[] args) throws Exception {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
-        Date startDate = formatter.parse("1981/10/02");
-        Date endDate = formatter.parse("1981/12/31");
+        // Peanuts first strip October 02, 1950
+        // Peanuts last strip February 13, 2000
+        Date startDate = formatter.parse("1961/10/02");
+        Date endDate = formatter.parse("1965/12/31");
 
         Calendar start = Calendar.getInstance();
         start.setTime(startDate);
